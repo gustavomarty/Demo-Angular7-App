@@ -1,0 +1,11 @@
+<p>
+  pessoas works!
+</p>
+
+<button (click)="retornarPessoas()">BUSCA</button>
+<button (click)="retornarMaisPessoas()">MORE</button>
+
+
+<div *ngFor="let pessoa of pessoaService.arrPessoas">
+  {{ pessoa.nome }} <button (click)="deleteTodo(pessoa.id)">x</button>
+</div>
